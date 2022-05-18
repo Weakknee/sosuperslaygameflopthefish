@@ -111,7 +111,7 @@ mySprite,
     . . . . . b 5 . . b . 1 . . . . 
     . . . . . . 5 1 . . . 5 5 . . . 
     `],
-500,
+200,
 true
 )
 scene.setBackgroundImage(img`
