@@ -56,6 +56,64 @@ mySprite2,
 200,
 true
 )
+let mySprite = sprites.create(img`
+    . . 5 . c c c c c c c c . 5 . . 
+    . 1 . c b d d d b d d d c 5 1 . 
+    . 5 c b b d d d d d d b d c 5 . 
+    . c b b b f 1 d d 1 f d d d c . 
+    . c b 3 d f f d d f f d 3 d c . 
+    . c d d 3 d d d d d d 3 b b c . 
+    . . c d d b f f f f d b b c . . 
+    . 5 . c d f d d d d f b c . . . 
+    . 5 1 . c c c c c c c c . . . . 
+    . . 5 c . c . . . . c . b . . . 
+    . . . c . c . . . c c . c . 5 . 
+    . 5 b . . . b . c . . b . 1 5 . 
+    5 . c . . . c 5 b . . c . 5 . . 
+    . . . c . c 5 1 . c 5 . c . . . 
+    . . . . . b 5 . . b 1 5 . . . . 
+    . . . . . . . . . . . 5 . . . . 
+    `, SpriteKind.Enemy)
+animation.runImageAnimation(
+mySprite,
+[img`
+    . . 5 . c c c c c c c c . 5 . . 
+    . 1 . c b d d d b d d d c 5 1 . 
+    . 5 c b b d d d d d d b d c 5 . 
+    . c b b b f 1 d d 1 f d d d c . 
+    . c b 3 d f f d d f f d 3 d c . 
+    . c d d 3 d d d d d d 3 b b c . 
+    . . c d d b f f f f d b b c . . 
+    . 5 . c d f d d d d f b c . . . 
+    . 5 1 . c c c c c c c c . . . . 
+    . . 5 c . c . . . . c . b . . . 
+    . . . c . c . . . c c . c . 5 . 
+    . 5 b . . . b . c . . b . 1 5 . 
+    5 . c . . . c 5 b . . c . 5 . . 
+    . . . c . c 5 1 . c 5 . c . . . 
+    . . . . . b 5 . . b 1 5 . . . . 
+    . . . . . . . . . . . 5 . . . . 
+    `,img`
+    . . . . c c c c c c c c . . . . 
+    . 5 1 c b d d d b d d d c 1 5 . 
+    5 5 c b b d d d d d d b d c 5 . 
+    . c b b b f 1 d d 1 f d d d c 1 
+    . c b 3 d f f d d f f d 3 d c 5 
+    . c d d 3 d d d d d d 3 b b c 5 
+    . . c d d b f f f f d b b c . . 
+    . 5 . c d f d d d d f b c 5 . . 
+    . 1 . . c c c c c c c c . 1 . . 
+    . . . c . c . 1 . . c . b . . . 
+    . . . c . c 5 5 . c c . c . 1 5 
+    . . b . . . b . c 1 . b . . . . 
+    5 . c . . . c . b 5 . c . . 5 . 
+    1 5 . c . c . . . c . . c . 5 1 
+    . . . . . b 5 . . b . 1 . . . . 
+    . . . . . . 5 1 . . . 5 5 . . . 
+    `],
+500,
+true
+)
 scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
